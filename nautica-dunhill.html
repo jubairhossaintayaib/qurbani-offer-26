@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celures — Nautica Voyage + Dunhill Blue | Eid Offer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --black: #0a0a0a; --white: #fafafa;
+  --gray-100: #f4f4f2; --gray-200: #e8e8e4;
+  --gray-400: #b0b0a8; --gray-600: #6e6e68;
+  --green: #25D366; --gold: #c9a84c;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'DM Sans', sans-serif;
+  --nav-h: 56px;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--white); color: var(--black); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--white); border-bottom: 1px solid var(--gray-200);
+  height: var(--nav-h); display: flex; align-items: center; padding: 0 20px;
+}
+.nav-inner { width: 100%; max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; color: var(--black); text-decoration: none; }
+.nav-whatsapp {
+  display: flex; align-items: center; gap: 7px;
+  background: var(--green); color: #fff; text-decoration: none;
+  padding: 7px 16px; border-radius: 24px; font-size: 12px; font-weight: 500;
+  transition: opacity 0.2s; white-space: nowrap;
+}
+.nav-whatsapp:hover { opacity: 0.88; }
+.nav-whatsapp svg { width: 15px; height: 15px; flex-shrink: 0; }
+@media (max-width: 400px) { .nav-whatsapp span.wa-text { display: none; } .nav-whatsapp { padding: 7px 10px; } }
+
+.page-body { padding-top: var(--nav-h); }
+
+/* EID BANNER */
+.eid-banner {
+  background: var(--black); color: var(--white);
+  text-align: center; padding: 10px 20px;
+  font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+}
+.eid-banner span { color: var(--gold); }
+
+.product-layout { display: flex; flex-direction: column; }
+@media (min-width: 900px) {
+  .product-layout { flex-direction: row; align-items: flex-start; max-width: 1200px; margin: 0 auto; }
+}
+
+.left-col { width: 100%; }
+@media (min-width: 900px) {
+  .left-col { width: 50%; position: sticky; top: var(--nav-h); height: calc(100vh - var(--nav-h)); overflow-y: auto; overflow-x: hidden; scrollbar-width: none; border-right: 1px solid var(--gray-200); }
+  .left-col::-webkit-scrollbar { display: none; }
+}
+
+.video-wrap { width: 100%; aspect-ratio: 16/9; background: #000; overflow: hidden; position: relative; }
+.video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+.desktop-image-grid { display: none; }
+@media (min-width: 900px) {
+  .desktop-image-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; padding: 3px; }
+  .desktop-image-grid .grid-thumb { aspect-ratio: 1/1; overflow: hidden; cursor: pointer; background: var(--gray-100); }
+  .desktop-image-grid .grid-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.2s; }
+  .desktop-image-grid .grid-thumb:hover img { transform: scale(1.04); }
+}
+
+.right-col { width: 100%; }
+@media (min-width: 900px) { .right-col { width: 50%; } }
+
+.product-info { padding: 22px 20px 24px; border-bottom: 1px solid var(--gray-200); }
+@media (min-width: 900px) { .product-info { padding: 32px 40px 28px; } }
+
+.badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.badge { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; border-radius: 4px; padding: 4px 10px; }
+.badge-eid { background: var(--gold); color: var(--black); }
+.badge-free { background: #e8f5e9; color: #1a7a40; border: 1px solid #b6e2c8; }
+.badge-pkg { background: var(--black); color: var(--white); }
+
+.product-title { font-family: var(--serif); font-size: clamp(28px,5vw,42px); font-weight: 400; line-height: 1.1; color: var(--black); margin-bottom: 5px; }
+.product-subtitle { font-size: 15px; color: var(--gray-600); margin-bottom: 16px; line-height: 1.6; }
+
+.package-box {
+  background: var(--gray-100); border-radius: 10px; padding: 16px 18px; margin-bottom: 18px;
+  border: 1px solid var(--gray-200);
+}
+.package-label { font-size: 11px; letter-spacing: 2px; color: var(--gray-600); text-transform: uppercase; margin-bottom: 10px; }
+.package-item { display: flex; align-items: center; gap: 8px; font-size: 15px; color: var(--black); margin-bottom: 6px; }
+.package-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--black); flex-shrink: 0; }
+.package-dot.gold { background: var(--gold); }
+.package-count { font-size: 12px; color: var(--gray-600); margin-top: 8px; border-top: 1px solid var(--gray-200); padding-top: 8px; }
+
+.divider-line { border: none; border-top: 1px solid var(--gray-200); margin: 0 0 18px; }
+
+.price-row { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
+.price-new { font-family: var(--serif); font-size: 40px; font-weight: 400; color: var(--black); line-height: 1; }
+.price-old { font-size: 19px; color: var(--gray-400); text-decoration: line-through; }
+.price-save { font-size: 12px; color: var(--white); background: var(--black); border-radius: 20px; padding: 2px 11px; }
+.price-note { font-size: 13px; color: var(--gray-600); margin-bottom: 16px; }
+
+.cod-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: #f0faf4; border: 1px solid #b6e2c8; color: #1a7a40;
+  border-radius: 6px; padding: 8px 16px; font-size: 14px; font-weight: 500; margin-bottom: 10px;
+}
+.cod-badge svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+.delivery-row { display: flex; gap: 7px; flex-wrap: wrap; }
+.delivery-pill { font-size: 13px; color: var(--gray-600); border: 1px solid var(--gray-200); border-radius: 20px; padding: 5px 14px; }
+
+.mobile-image-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; padding: 3px; border-bottom: 1px solid var(--gray-200); }
+@media (min-width: 900px) { .mobile-image-grid { display: none; } }
+.grid-thumb { aspect-ratio: 1/1; overflow: hidden; cursor: pointer; background: var(--gray-100); }
+.grid-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.2s; }
+.grid-thumb:hover img { transform: scale(1.04); }
+
+.section { padding: 28px 20px; border-bottom: 1px solid var(--gray-200); }
+@media (min-width: 900px) { .section { padding: 32px 40px; } }
+.section-title { font-family: var(--serif); font-size: 30px; font-weight: 300; color: var(--black); margin-bottom: 20px; }
+
+/* FREE GIFT SELECTOR */
+.gift-section { padding: 0 20px 24px; border-bottom: 1px solid var(--gray-200); }
+@media (min-width: 900px) { .gift-section { padding: 0 40px 28px; } }
+.gift-title { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--black); margin-bottom: 4px; }
+.gift-subtitle { font-size: 13px; color: var(--gray-600); margin-bottom: 14px; }
+.gift-loading { font-size: 14px; color: var(--gray-400); padding: 12px 0; }
+
+.gift-select-wrap { position: relative; }
+.gift-select-wrap select {
+  width: 100%; padding: 13px 40px 13px 14px;
+  border: 1px solid var(--gray-200); border-radius: 8px;
+  font-family: var(--sans); font-size: 15px; color: var(--black);
+  background: var(--white); outline: none; cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+  transition: border-color 0.18s;
+}
+.gift-select-wrap select:focus { border-color: var(--black); }
+.gift-select-wrap select.error { border-color: #b94040; }
+.select-arrow { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--gray-600); font-size: 10px; }
+.gift-stock-note { font-size: 12px; color: var(--gold); margin-top: 6px; font-weight: 500; }
+
+/* ORDER FORM */
+.form-title { font-family: var(--serif); font-size: 30px; font-weight: 300; color: var(--black); margin-bottom: 4px; }
+.form-subtitle { font-size: 15px; color: var(--gray-600); margin-bottom: 22px; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-size: 11px; letter-spacing: 1.5px; color: var(--gray-600); text-transform: uppercase; margin-bottom: 6px; }
+.form-group input, .form-group textarea {
+  width: 100%; padding: 13px 14px;
+  border: 1px solid var(--gray-200); border-radius: 8px;
+  font-family: var(--sans); font-size: 16px; color: var(--black);
+  background: var(--white); outline: none; transition: border-color 0.18s; -webkit-appearance: none;
+}
+.form-group input:focus, .form-group textarea:focus { border-color: var(--black); }
+.form-group input.error, .form-group textarea.error { border-color: #b94040; }
+.form-group textarea { resize: none; height: 80px; }
+
+.district-wrapper { position: relative; }
+.district-input-wrap { position: relative; }
+.district-input-wrap input { padding-right: 34px; }
+.district-arrow { position: absolute; right: 13px; top: 50%; transform: translateY(-50%); pointer-events: none; color: var(--gray-600); font-size: 10px; }
+.district-dropdown {
+  display: none; position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+  background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px;
+  max-height: 200px; overflow-y: auto; z-index: 50; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.district-dropdown.open { display: block; }
+.district-option { padding: 11px 13px; font-size: 15px; cursor: pointer; color: var(--black); transition: background 0.1s; }
+.district-option:hover { background: var(--gray-100); }
+.district-option.no-results { color: var(--gray-600); cursor: default; }
+
+.error-msg { font-size: 13px; color: #b94040; margin-top: 4px; display: none; }
+.error-msg.show { display: block; }
+
+.order-total-box { background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 10px; padding: 16px 18px; margin: 20px 0 14px; }
+.total-label { font-size: 11px; letter-spacing: 2px; color: var(--gray-600); text-transform: uppercase; margin-bottom: 12px; }
+.total-row { display: flex; justify-content: space-between; font-size: 15px; color: var(--gray-600); margin-bottom: 6px; }
+.total-row.main { color: var(--black); }
+.total-row.free-row { color: #1a7a40; font-weight: 500; }
+.total-divider { border: none; border-top: 1px solid var(--gray-200); margin: 10px 0; }
+.total-final { display: flex; justify-content: space-between; font-size: 16px; font-weight: 600; color: var(--black); }
+.total-pending { font-size: 13px; color: var(--gray-400); font-style: italic; text-align: center; padding: 4px 0; }
+
+.confirm-btn {
+  width: 100%; height: 56px; background: var(--black); color: var(--white);
+  border: none; border-radius: 8px; font-family: var(--sans); font-size: 15px;
+  letter-spacing: 2.5px; text-transform: uppercase; cursor: pointer; transition: opacity 0.2s;
+}
+.confirm-btn:hover { opacity: 0.8; }
+.confirm-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.form-note { font-size: 13px; color: var(--gray-400); text-align: center; margin-top: 12px; line-height: 1.7; }
+
+.faq-item { display: flex; gap: 12px; align-items: flex-start; padding: 15px 0; border-bottom: 1px solid var(--gray-100); }
+.faq-item:last-child { border-bottom: none; }
+.faq-check { width: 22px; height: 22px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 2px; display: flex; align-items: center; justify-content: center; }
+.faq-check svg { width: 10px; height: 10px; }
+.faq-q { font-size: 16px; font-weight: 500; color: var(--black); margin-bottom: 5px; line-height: 1.4; }
+.faq-a { font-size: 15px; color: var(--gray-600); line-height: 1.9; }
+
+.img-lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.96); z-index: 300; flex-direction: column; align-items: center; justify-content: center; }
+.img-lightbox.open { display: flex; }
+.img-lightbox-viewport { width: 100vw; height: 85vh; max-width: 500px; position: relative; overflow: hidden; }
+.img-lightbox-track { display: flex; height: 100%; transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94); }
+.img-lightbox-slide { flex-shrink: 0; width: 100%; height: 100%; }
+.img-lightbox-slide img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.img-lightbox-close { position: absolute; top: 14px; right: 16px; width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.12); border: none; cursor: pointer; color: #fff; font-size: 18px; display: flex; align-items: center; justify-content: center; z-index: 10; }
+.img-lightbox-nav { display: flex; gap: 14px; margin-top: 16px; }
+.img-lightbox-btn { width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.12); border: none; cursor: pointer; color: #fff; font-size: 22px; display: flex; align-items: center; justify-content: center; }
+.img-lightbox-counter { color: rgba(255,255,255,0.45); font-size: 12px; letter-spacing: 1px; margin-top: 10px; }
+
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(16px); background: var(--black); color: var(--white); padding: 10px 22px; border-radius: 30px; font-size: 12px; letter-spacing: 1px; opacity: 0; pointer-events: none; transition: all 0.3s; z-index: 400; white-space: nowrap; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+.out-of-stock-msg { font-size: 14px; color: #b94040; padding: 10px 0; display: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="#">Celures</a>
+    <a class="nav-whatsapp" href="https://wa.me/message/UDULI5NP36Q4L1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.103 1.508 5.836L.057 23.625a.75.75 0 00.921.918l5.884-1.536A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.695 9.695 0 01-4.949-1.355l-.355-.211-3.668.957.986-3.587-.231-.368A9.698 9.698 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+      <span class="wa-text">Chat on WhatsApp</span>
+    </a>
+  </div>
+</nav>
+
+<div class="page-body">
+<div class="eid-banner">🌙 ঈদ স্পেশাল অফার — <span>মাত্র কয়েকদিনের জন্য</span> — স্টক শেষ হলে অফার শেষ 🌙</div>
+
+<div class="product-layout">
+
+  <div class="left-col">
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/vvlil0guKGc?loop=1&playlist=vvlil0guKGc&controls=1&rel=0&modestbranding=1"
+        title="Celures Eid Offer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="desktop-image-grid" id="desktopImageGrid"></div>
+  </div>
+
+  <div class="right-col">
+
+    <div class="product-info">
+      <div class="badge-row">
+        <span class="badge badge-eid">🌙 Eid Offer</span>
+        <span class="badge badge-free">🎁 ১টি FREE</span>
+        <span class="badge badge-pkg">মাত্র ২৪টি প্যাকেজ</span>
+      </div>
+      <h1 class="product-title">Nautica Voyage<br>+ Dunhill Blue</h1>
+      <div class="product-subtitle" style="font-size:16px; color:var(--black); font-weight:500; margin-bottom:14px;">+ আপনার পছন্দের ১টি perfume সম্পূর্ণ FREE 🎁</div>
+
+      <div class="package-box">
+        <div class="package-label">এই প্যাকেজে পাচ্ছেন</div>
+        <div class="package-item"><div class="package-dot"></div><span>Nautica Voyage (30ml)</span></div>
+        <div class="package-item"><div class="package-dot"></div><span>Dunhill Blue (30ml)</span></div>
+        <div class="package-item"><div class="package-dot gold"></div><span style="color:var(--gold); font-weight:500;">আপনার পছন্দের ১টি — FREE</span></div>
+        <div class="package-count">মোট ৩টি perfume · মাত্র ২৪টি প্যাকেজ বাকি</div>
+      </div>
+
+      <hr class="divider-line">
+      <div class="price-row">
+        <div class="price-new">৳১,৫০০</div>
+        <div class="price-old">৳৩,০০০</div>
+        <div class="price-save">৫০% off</div>
+      </div>
+      <div class="price-note">তিনটি 30ml perfume — মাত্র দুটির দামে।</div>
+      <div class="cod-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Cash on Delivery — পণ্য পেয়ে টাকা দিন
+      </div>
+      <div class="delivery-row">
+        <div class="delivery-pill">🚚 ঢাকার ভেতরে ৳৮০</div>
+        <div class="delivery-pill">🚚 ঢাকার বাইরে ৳১৩০</div>
+      </div>
+    </div>
+
+    <div style="border-bottom: 1px solid var(--gray-200); padding: 4px 0;">
+      <div class="mobile-image-grid" id="mobileImageGrid"></div>
+    </div>
+
+    <!-- FREE GIFT SELECTOR -->
+    <div class="gift-section" style="padding-top:24px;">
+      <div class="gift-title">আপনার FREE Gift বেছে নিন 🎁</div>
+      <div class="gift-subtitle">নিচের list থেকে আপনার পছন্দের perfume select করুন। FREE gift perfume এর option available stock এর উপর depend করে — নিচের list এ যে perfume গুলো দেখাচ্ছে সেগুলোই stock এ available।</div>
+      <div class="gift-loading" id="giftLoading">স্টক চেক করা হচ্ছে...</div>
+      <div class="gift-select-wrap" id="giftSelectWrap" style="display:none">
+        <select id="freeGiftSelect">
+          <option value="">— FREE Gift সিলেক্ট করুন —</option>
+        </select>
+        <span class="select-arrow">▾</span>
+      </div>
+      <div class="out-of-stock-msg" id="allOutMsg">দুঃখিত, সকল free gift স্টক শেষ হয়ে গেছে।</div>
+      <div class="error-msg" id="errGift">Please select your free gift.</div>
+      <div class="gift-stock-note" id="giftStockNote"></div>
+    </div>
+
+    <!-- ORDER FORM -->
+    <div class="section" id="orderFormBlock">
+      <div class="form-title">অর্ডার করুন</div>
+      <div class="form-subtitle">নিচের তথ্য দিন — আমরা কল করে confirm করবো।</div>
+
+      <div class="form-group">
+        <label>Full Name — পুরো নাম</label>
+        <input type="text" id="fieldName" placeholder="আপনার নাম লিখুন" autocomplete="name">
+        <div class="error-msg" id="errName">Please enter your name.</div>
+      </div>
+      <div class="form-group">
+        <label>Phone Number — ফোন নম্বর</label>
+        <input type="tel" id="fieldPhone" placeholder="01XXXXXXXXX" autocomplete="tel" maxlength="11" inputmode="numeric">
+        <div class="error-msg" id="errPhone">Please enter a valid 11-digit number.</div>
+      </div>
+      <div class="form-group">
+        <label>District — জেলা</label>
+        <div class="district-wrapper">
+          <div class="district-input-wrap">
+            <input type="text" id="districtInput" placeholder="জেলার নাম লিখুন..." autocomplete="off">
+            <span class="district-arrow">▾</span>
+          </div>
+          <div class="district-dropdown" id="districtDropdown"></div>
+        </div>
+        <div class="error-msg" id="errDistrict">Please select your district.</div>
+      </div>
+      <div class="form-group">
+        <label>Full Address — পুরো ঠিকানা</label>
+        <textarea id="fieldAddress" placeholder="বাসা নম্বর, রোড, এলাকা, থানা..."></textarea>
+        <div class="error-msg" id="errAddress">Please enter your delivery address.</div>
+      </div>
+
+      <div class="order-total-box">
+        <div class="total-label">Order Summary</div>
+        <div class="total-row main"><span>Nautica Voyage (30ml)</span><span>—</span></div>
+        <div class="total-row main"><span>Dunhill Blue (30ml)</span><span>—</span></div>
+        <div class="total-row" style="color:var(--black); font-weight:500;"><span>Package Price</span><span>Tk 1,500</span></div>
+        <div class="total-row free-row"><span id="selectedGiftName">Free Gift (আপনার পছন্দ)</span><span>FREE 🎁</span></div>
+        <div class="total-row"><span>Delivery</span><span id="deliveryAmt">—</span></div>
+        <hr class="total-divider">
+        <div class="total-final" id="totalFinal" style="display:none">
+          <span>Total (Cash on Delivery)</span>
+          <span class="amount" id="totalAmt"></span>
+        </div>
+        <div class="total-pending" id="totalPending">জেলা সিলেক্ট করলে মোট মূল্য দেখাবে</div>
+      </div>
+
+      <button class="confirm-btn" id="confirmBtn" onclick="submitOrder()">অর্ডার নিশ্চিত করুন →</button>
+      <div class="form-note">আমরা আপনাকে কল করে অর্ডারটি নিশ্চিত করবো।<br>We will call you to confirm before dispatch.</div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section" style="border-bottom:none; padding-bottom:60px;">
+      <div class="section-title">Frequently Asked Questions</div>
+      <div class="faq-item">
+        <div class="faq-check"><svg viewBox="0 0 12 10" fill="none"><polyline points="1,5 4.5,8.5 11,1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="faq-q">এই ঈদ অফারে কী পাবো?</div><div class="faq-a">Nautica Voyage (30ml) + Dunhill Blue (30ml) — এই দুটো কিনলে আপনার পছন্দের আরেকটি premium perfume সম্পূর্ণ বিনামূল্যে পাবেন। মোট ৩টি perfume মাত্র ১,৫০০ টাকায়।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-check"><svg viewBox="0 0 12 10" fill="none"><polyline points="1,5 4.5,8.5 11,1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="faq-q">Free gift এর stock শেষ হলে কী হবে?</div><div class="faq-a">যে gift এর stock শেষ হয়ে যাবে সেটি dropdown থেকে automatically সরে যাবে। তাই দেরি না করে এখনই অর্ডার করুন।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-check"><svg viewBox="0 0 12 10" fill="none"><polyline points="1,5 4.5,8.5 11,1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="faq-q">এগুলো কি original নাকি inspired?</div><div class="faq-a">এগুলো inspired version। আমরা শুধুমাত্র বিশ্বের সেরা fragrance companies — <strong>LUZI, Argeville, Firmenich এবং Givaudan</strong> — এর perfume oil ব্যবহার করি।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-check"><svg viewBox="0 0 12 10" fill="none"><polyline points="1,5 4.5,8.5 11,1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="faq-q">Delivery charge ও সময়?</div><div class="faq-a">ঢাকার ভেতরে ৮০ টাকা, বাইরে ১৩০ টাকা। Order confirm হওয়ার পর ৪৮–৭২ ঘন্টায় পৌঁছে যাবে।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-check"><svg viewBox="0 0 12 10" fill="none"><polyline points="1,5 4.5,8.5 11,1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="faq-q">Payment কিভাবে?</div><div class="faq-a">সম্পূর্ণ Cash on Delivery। Product হাতে পাওয়ার পর টাকা দেবেন — আগে কোনো payment নেই।</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="img-lightbox" id="imgLightbox" onclick="closeLightboxOnBg(event)">
+  <button class="img-lightbox-close" onclick="closeLightbox()">✕</button>
+  <div class="img-lightbox-viewport">
+    <div class="img-lightbox-track" id="lightboxTrack"></div>
+  </div>
+  <div class="img-lightbox-nav">
+    <button class="img-lightbox-btn" onclick="lightboxNav(-1)">‹</button>
+    <button class="img-lightbox-btn" onclick="lightboxNav(1)">›</button>
+  </div>
+  <div class="img-lightbox-counter" id="lightboxCounter"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// ── SUPABASE CONFIG ──
+const SUPABASE_URL = 'https://ughjbqqhvokwwumetesm.supabase.co';
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVnaGpicXFodm9rd3d1bWV0ZXNtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkwMjk3MjUsImV4cCI6MjA5NDYwNTcyNX0.JCcWlbY8FBeTPV3SIN-asqvfnF_vaYVMANlucQE5piA';
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+
+const OFFER = 'Nautica Voyage + Dunhill Blue';
+const PERFUME_1 = 'Nautica Voyage (30ml)';
+const PERFUME_2 = 'Dunhill Blue (30ml)';
+
+// ── FREE GIFT LOGIC ──
+let gifts = [];
+
+async function loadGifts() {
+  const { data, error } = await sb.from('free_gifts').select('*').gt('stock', 0).order('name');
+  if (error) { document.getElementById('giftLoading').textContent = 'Could not load gifts. Please refresh.'; return; }
+  gifts = data || [];
+  renderGiftDropdown();
+  subscribeToGifts();
+}
+
+function renderGiftDropdown() {
+  const loading = document.getElementById('giftLoading');
+  const wrap = document.getElementById('giftSelectWrap');
+  const allOut = document.getElementById('allOutMsg');
+  const select = document.getElementById('freeGiftSelect');
+
+  if (gifts.length === 0) {
+    loading.style.display = 'none';
+    wrap.style.display = 'none';
+    allOut.style.display = 'block';
+    return;
+  }
+
+  loading.style.display = 'none';
+  allOut.style.display = 'none';
+  wrap.style.display = 'block';
+
+  const current = select.value;
+  select.innerHTML = '<option value="">— FREE Gift সিলেক্ট করুন —</option>';
+  gifts.forEach(g => {
+    const opt = document.createElement('option');
+    opt.value = g.name;
+    opt.textContent = g.name + (g.stock <= 3 ? ` (মাত্র ${g.stock}টি বাকি!)` : '');
+    select.appendChild(opt);
+  });
+  if (current && gifts.find(g => g.name === current)) select.value = current;
+  updateGiftNote();
+}
+
+function updateGiftNote() {
+  const select = document.getElementById('freeGiftSelect');
+  const note = document.getElementById('giftStockNote');
+  const val = select.value;
+  if (!val) { note.textContent = ''; return; }
+  const gift = gifts.find(g => g.name === val);
+  if (gift && gift.stock <= 5) note.textContent = `⚠️ মাত্র ${gift.stock}টি বাকি — তাড়াতাড়ি করুন!`;
+  else note.textContent = '';
+  // update order summary
+  document.getElementById('selectedGiftName').textContent = val + ' (FREE)';
+}
+
+document.getElementById('freeGiftSelect').addEventListener('change', updateGiftNote);
+
+function subscribeToGifts() {
+  sb.channel('free_gifts_changes').on('postgres_changes',
+    { event: 'UPDATE', schema: 'public', table: 'free_gifts' },
+    payload => {
+      const updated = payload.new;
+      const idx = gifts.findIndex(g => g.id === updated.id);
+      if (updated.stock <= 0) {
+        if (idx > -1) gifts.splice(idx, 1);
+      } else {
+        if (idx > -1) gifts[idx] = updated; else gifts.push(updated);
+      }
+      gifts.sort((a,b) => a.name.localeCompare(b.name));
+      renderGiftDropdown();
+    }
+  ).subscribe();
+}
+
+loadGifts();
+
+// ── IMAGE GRID ──
+const GALLERY_IMAGES = Array.from({length:6},(_,i)=>`images/gallery${i+1}.jpg`);
+let validImages = [], lightboxIdx = 0;
+function initImageGrids() {
+  const mg = document.getElementById('mobileImageGrid');
+  const dg = document.getElementById('desktopImageGrid');
+  const lt = document.getElementById('lightboxTrack');
+  GALLERY_IMAGES.forEach((src,i) => {
+    const probe = new Image();
+    probe.onload = () => {
+      validImages.push(src);
+      const lbs = document.createElement('div'); lbs.className='img-lightbox-slide'; lbs.innerHTML=`<img src="${src}" alt="Product">`;
+      lt.appendChild(lbs);
+      [mg,dg].forEach(grid => {
+        const t = document.createElement('div'); t.className='grid-thumb'; t.innerHTML=`<img src="${src}" alt="Product">`;
+        t.onclick=()=>openLightbox(validImages.indexOf(src)); grid.appendChild(t);
+      });
+    };
+    probe.src = src;
+  });
+}
+initImageGrids();
+
+function openLightbox(idx) { lightboxIdx=idx; updateLightbox(); document.getElementById('imgLightbox').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeLightbox() { document.getElementById('imgLightbox').classList.remove('open'); document.body.style.overflow=''; }
+function closeLightboxOnBg(e) { if(e.target===document.getElementById('imgLightbox')) closeLightbox(); }
+function updateLightbox() { document.getElementById('lightboxTrack').style.transform=`translateX(-${lightboxIdx*100}%)`; document.getElementById('lightboxCounter').textContent=(lightboxIdx+1)+' / '+validImages.length; }
+function lightboxNav(dir) { lightboxIdx=Math.max(0,Math.min(validImages.length-1,lightboxIdx+dir)); updateLightbox(); }
+let lbTX=0;
+document.getElementById('imgLightbox').addEventListener('touchstart',e=>{lbTX=e.touches[0].clientX},{passive:true});
+document.getElementById('imgLightbox').addEventListener('touchend',e=>{const d=lbTX-e.changedTouches[0].clientX;if(Math.abs(d)>40)lightboxNav(d>0?1:-1);});
+document.addEventListener('keydown',e=>{ if(!document.getElementById('imgLightbox').classList.contains('open'))return; if(e.key==='ArrowRight')lightboxNav(1); if(e.key==='ArrowLeft')lightboxNav(-1); if(e.key==='Escape')closeLightbox(); });
+
+// ── DISTRICTS ──
+const DISTRICTS=["Bagerhat","Bandarban","Barguna","Barishal","Bhola","Bogura","Brahmanbaria","Chandpur","Chattogram","Chuadanga","Cox's Bazar","Cumilla","Dhaka","Dinajpur","Faridpur","Feni","Gaibandha","Gazipur","Gopalganj","Habiganj","Jamalpur","Jashore","Jhalokati","Jhenaidah","Joypurhat","Khagrachhari","Khulna","Kishoreganj","Kurigram","Kushtia","Lakshmipur","Lalmonirhat","Madaripur","Magura","Manikganj","Meherpur","Moulvibazar","Munshiganj","Mymensingh","Naogaon","Narail","Narayanganj","Narsingdi","Natore","Netrokona","Nilphamari","Noakhali","Pabna","Panchagarh","Patuakhali","Pirojpur","Rajbari","Rajshahi","Rangamati","Rangpur","Satkhira","Shariatpur","Sherpur","Sirajganj","Sunamganj","Sylhet","Tangail","Thakurgaon"];
+let selectedDistrict='';
+const districtInput=document.getElementById('districtInput');
+const districtDropdown=document.getElementById('districtDropdown');
+districtInput.addEventListener('input',function(){ selectedDistrict=''; const q=this.value.toLowerCase().trim(); renderDistricts(q?DISTRICTS.filter(d=>d.toLowerCase().includes(q)):DISTRICTS); districtDropdown.classList.add('open'); updateTotal(); });
+districtInput.addEventListener('focus',function(){ const q=this.value.toLowerCase().trim(); renderDistricts(q?DISTRICTS.filter(d=>d.toLowerCase().includes(q)):DISTRICTS); districtDropdown.classList.add('open'); });
+document.addEventListener('click',e=>{ if(!e.target.closest('.district-wrapper'))districtDropdown.classList.remove('open'); });
+function renderDistricts(list) {
+  districtDropdown.innerHTML=list.length?list.map(d=>`<div class="district-option" data-name="${d.replace(/"/g,'&quot;')}">${d}</div>`).join(''):'<div class="district-option no-results">No district found</div>';
+  districtDropdown.querySelectorAll('.district-option[data-name]').forEach(el=>el.addEventListener('click',()=>pickDistrict(el.dataset.name)));
+}
+function pickDistrict(name){ selectedDistrict=name; districtInput.value=name; districtDropdown.classList.remove('open'); updateTotal(); }
+function updateTotal(){
+  if(!selectedDistrict){ document.getElementById('deliveryAmt').textContent='—'; document.getElementById('totalFinal').style.display='none'; document.getElementById('totalPending').style.display='block'; return; }
+  const delivery=selectedDistrict.toLowerCase()==='dhaka'?80:130;
+  const total=1500+delivery;
+  document.getElementById('deliveryAmt').textContent='Tk '+delivery;
+  document.getElementById('totalAmt').textContent='Tk '+total;
+  document.getElementById('totalFinal').style.display='flex';
+  document.getElementById('totalPending').style.display='none';
+}
+document.getElementById('fieldPhone').addEventListener('input',function(){ this.value=this.value.replace(/[^0-9]/g,'').slice(0,11); });
+
+// ── SUBMIT ──
+async function submitOrder() {
+  let valid=true;
+  const name=document.getElementById('fieldName').value.trim();
+  const phone=document.getElementById('fieldPhone').value.trim();
+  const address=document.getElementById('fieldAddress').value.trim();
+  const freeGift=document.getElementById('freeGiftSelect').value;
+
+  if(!name){showErr('fieldName','errName');valid=false;}else clearErr('fieldName','errName');
+  const pc=phone.replace(/\D/g,'');
+  if(pc.length!==11||!pc.startsWith('01')){showErr('fieldPhone','errPhone');valid=false;}else clearErr('fieldPhone','errPhone');
+  if(!selectedDistrict){document.getElementById('errDistrict').classList.add('show');valid=false;}else document.getElementById('errDistrict').classList.remove('show');
+  if(!address){showErr('fieldAddress','errAddress');valid=false;}else clearErr('fieldAddress','errAddress');
+  if(!freeGift){document.getElementById('errGift').classList.add('show');valid=false;}else document.getElementById('errGift').classList.remove('show');
+  if(!valid){document.getElementById('orderFormBlock').scrollIntoView({behavior:'smooth',block:'start'});return;}
+
+  const delivery=selectedDistrict.toLowerCase()==='dhaka'?80:130;
+  const total=1500+delivery;
+  const btn=document.getElementById('confirmBtn');
+  btn.disabled=true; btn.textContent='Submitting...';
+
+  try {
+    // Insert order
+    const { error: orderError } = await sb.from('orders').insert([{
+      offer: OFFER, name, phone, district: selectedDistrict, address,
+      free_gift: freeGift, perfume_1: PERFUME_1, perfume_2: PERFUME_2,
+      delivery, total
+    }]);
+    if (orderError) throw orderError;
+
+    // Decrement stock
+    const gift = gifts.find(g => g.name === freeGift);
+    if (gift) {
+      const { error: stockError } = await sb.from('free_gifts')
+        .update({ stock: Math.max(0, gift.stock - 1) })
+        .eq('id', gift.id);
+      if (stockError) throw stockError;
+    }
+
+    const params = new URLSearchParams({ name, phone, district: selectedDistrict, delivery, total, gift: freeGift, offer: OFFER });
+    window.location.href = 'thankyou.html?' + params.toString();
+  } catch(err) {
+    btn.disabled=false; btn.textContent='অর্ডার নিশ্চিত করুন →';
+    showToast('Something went wrong. Please try again.');
+  }
+}
+
+function showErr(fId,eId){document.getElementById(fId).classList.add('error');document.getElementById(eId).classList.add('show');}
+function clearErr(fId,eId){document.getElementById(fId).classList.remove('error');document.getElementById(eId).classList.remove('show');}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
+</script>
+</body>
+</html>
